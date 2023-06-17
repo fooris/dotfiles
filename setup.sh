@@ -11,6 +11,13 @@ export RUNZSH="no"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ln -sf ${PWD}/.zshrc ~/
 
+# Install Hack
+wget -O /tmp/Hack.zip https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
+unzip -d /tmp /tmp/Hack.zip
+sudo mv /tmp/ttf/* /usr/share/fonts/
+fc-cache -f -v
+
+
 # Install tmux
 git -C ${DEV}/base16-tmux pull || git clone git@github.com:tinted-theming/base16-tmux.git ${DEV}/base16-tmux
 sudo dnf install tmux
