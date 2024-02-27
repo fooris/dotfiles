@@ -101,10 +101,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias l="exa"
-alias ls="exa"
-alias ll="exa -l"
-alias la="exa -la"
+alias l="eza"
+alias ls="eza"
+alias ll="eza -l"
+alias la="eza -la"
 
 export TERM=tmux-256color
 
